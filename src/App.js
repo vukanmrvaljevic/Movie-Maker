@@ -4,7 +4,6 @@ import "./App.css"
 import Actors from "./Actors"
 import Ideas from "./Ideas"
 import Notes from "./Notes"
-import Home from "./Home"
 
 function App() {
   return (
@@ -20,9 +19,6 @@ function App() {
           Movie-Notes
         </Link>
       </nav>
-      <Route path="/" exact>
-        <Home />
-      </Route>
       <Route path="/actors">
         <Actors />
       </Route>
