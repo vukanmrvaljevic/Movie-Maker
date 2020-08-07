@@ -19,7 +19,7 @@ function App() {
           Movie-Notes
         </Link>
       </nav>
-      <Route path="/actors">
+      <Route path="/actors" exact>
         <Actors />
       </Route>
       <Route path="/ideas">
