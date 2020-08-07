@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Movie-Maker
 
-## Available Scripts
+## App Title:
+Movie-Maker App
 
-In the project directory, you can run:
+## Description:
+This app will serve as a base for people who want to make there ideal movies, there will be a section for description of what they want to make. A section where they can add a list of actors, and actresses, along with any other deitals that they need. I will also design the app/website where with each section im going to create a own sub-section so these things are seperated and more organized. At the end there will be a section where they will be a section where they can add notes for themselves, regarding there idea 
 
-### `npm start`
+## Wireframe:
+https://whimsical.com/TvZJhXGPuXWGsxjQBZVLxb@2Ux7TurymN5E9VZpoxaD
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Component Heirarch:
+```
+|__ Welcome page/
+     |__ Actors/
+         |__ inputs
+         |__ button
+     |__ Movie-Ideas/
+          |__ inputs
+          |__ button
+     |__ Notes
+          |__ inputs
+          |__ button
+ ```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## API:
+The Airtable API will be used by implementhing all the aspects of the app that i described earlier with the adding two seperate lists, descritpion secton, and a note section of the app. 
 
-### `npm test`
+## Timeframes
+|   Day      | Deliverable                                        |
+| ----------:| --------------------------------------------------:| 
+| August 3    |Get Approved, write the skeleton           |
+| August 4    |Add React Router, use state and other components                  |
+| August 5   |Add Style, and Responsiveness   |
+| August 6    |Test out the app and make sure everything is working good, not breaking  |
+| August 7   |Try not to extra nervous on Presentation Day                        |
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## MVP:
+1. Make it able to add a list, and description of there movie
+2. Make it Responsive
+3. Give it a smooth transition from page to page
+4. Give the user the ability to add pictures of there actors and acctresses 
 
-### `npm run build`
+## Post-MVP:
+1. Add Music in the background
+2. Open up the ability to create an account 
+3. Create a section of the app/website where the user can upload the finished product.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## SWOT Analysis:
+My strength heading into this project is the design aspect, the weakness is adding all this features and making sure the App doesnt break, and making sure the product is usablle. I plan on overcoming anything negative that comes my way by looking it up on Google, Youtube or if that doesn't work asking one of the teachers for help.
