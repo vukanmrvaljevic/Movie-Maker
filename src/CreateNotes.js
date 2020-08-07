@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
 import "./App.css"
+import image from "./movie-notes.jpg"
 
 function CreateNotes(props) {
   const [name, updateName] = useState("")
@@ -27,10 +28,11 @@ function CreateNotes(props) {
     updateName("")
     updateNotes("")
   }
+  const myStyle = { width: "80px", height: "90px", borderRadius: "10px" }
   return (
     <div>
       <form className="form-creator" onSubmit={handleSubmit}>
-        <h2>Create Notes</h2>
+        <img src={image} alt="idea" style={myStyle} />
         <label htmlFor="name">Name</label>
         <input
           name="text"

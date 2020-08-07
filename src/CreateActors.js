@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import axios from "axios"
+import images from "./casting.png"
 
 function CreateActors(props) {
   const [name, updateName] = useState("")
@@ -30,9 +31,15 @@ function CreateActors(props) {
     updateImage("")
   }
 
+  const myStyle = {
+    width: "120px",
+    height: "90px",
+    borderRadius: "10px",
+  }
   return (
     <>
       <form className="form-creator" onSubmit={handleSubmit}>
+        <img src={images} alt="idea" style={myStyle} />
         <label className="acting" htmlFor="actor">
           Actor
         </label>

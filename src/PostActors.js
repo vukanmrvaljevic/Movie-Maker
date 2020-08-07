@@ -18,13 +18,16 @@ function PostActors(props) {
     props.updateFetchMovieInfo(!props.fetchMovieInfo)
   }
 
+  const myStyle = {
+    borderRadius: "10px",
+  }
   return (
     <div>
       <main className="total-container">
         <section className="form-container">
           <h2>{post.fields.name}</h2>
           <h2>{post.fields.movie}</h2>
-          <img src={post.fields.image} alt="img" />
+          <img src={post.fields.image} alt="img" style={myStyle} />
         </section>
         <UpdateActors
           post={post}

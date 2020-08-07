@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
 import "./App.css"
+import image from "./ideas.png"
 
 function CreateIdeas(props) {
   const [name, updateName] = useState("")
@@ -30,6 +31,9 @@ function CreateIdeas(props) {
   return (
     <div>
       <form className="form-creator" onSubmit={handleSubmit}>
+        <section className="image">
+          <img src={image} alt="idea" width="150px" />
+        </section>
         <label htmlFor="name">Name</label>
         <input
           name="text"
