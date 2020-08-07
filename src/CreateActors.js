@@ -33,7 +33,9 @@ function CreateActors(props) {
   return (
     <>
       <form className="form-creator" onSubmit={handleSubmit}>
-        <label htmlFor="actor">Actor</label>
+        <label className="acting" htmlFor="actor">
+          Actor
+        </label>
         <input
           name="text"
           id="actor"

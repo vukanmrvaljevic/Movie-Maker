@@ -41,7 +41,7 @@ function CreateIdeas(props) {
         <textarea
           name="text"
           id="ideas"
-          cols="30"
+          cols="15"
           rows="5"
           onChange={(e) => updateIdeas(e.target.value)}
           value={ideas}
