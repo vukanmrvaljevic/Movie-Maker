@@ -48,3 +48,9 @@ The Airtable API will be used by implementhing all the aspects of the app that i
 
 ## SWOT Analysis:
 My strength heading into this project is the design aspect, the weakness is adding all this features and making sure the App doesnt break, and making sure the product is usablle. I plan on overcoming anything negative that comes my way by looking it up on Google, Youtube or if that doesn't work asking one of the teachers for help.
+
+## Code Snippet
+```
+ <img src={post.fields.image} alt="img" style={myStyle} />
+```
+Ther reasson why this is the line of code i am proud of is it gave me a lot of problems. I could not figure it out for the life of me. Even though it looks simple its something that made me happy.
