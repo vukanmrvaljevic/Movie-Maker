@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import axios from "axios"
-import images from "./casting.png"
+// import images from "./casting.png"
 
 function CreateStory(props) {
   const [name, updateName] = useState("")
-  const [movie, updateMovie] = useState("")
+  const [story, updateStory] = useState("")
   const [image, updateImage] = useState("")
 
   const handleSubmit = async (e) => {
@@ -14,7 +14,7 @@ function CreateStory(props) {
       {
         fields: {
           name: name,
-          movie: movie,
+          story: story,
           image: image,
         },
       },
@@ -25,36 +25,36 @@ function CreateStory(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchStoryInfo(!props.fetchStoryInfo)
     updateName("")
-    updateMovie("")
+    updateStory("")
     updateImage("")
   }
 
-  const myStyle = {
-    width: "120px",
-    height: "90px",
-    borderRadius: "10px",
-  }
+  //   const myStyle = {
+  //     width: "120px",
+  //     height: "90px",
+  //     borderRadius: "10px",
+  //   }
   return (
     <>
       <form className="form-creator" onSubmit={handleSubmit}>
-        <img src={images} alt="idea" style={myStyle} />
-        <label className="acting" htmlFor="actor">
-          Actor
+        {/* <img src={images} alt="idea" style={myStyle} /> */}
+        <label className="acting" htmlFor="character">
+          Characters
         </label>
         <input
           name="text"
-          id="actor"
+          id="character"
           onChange={(e) => updateName(e.target.value)}
           value={name}
         />
-        <label htmlFor="movie">Movie</label>
+        <label htmlFor="story">story</label>
         <input
           name="text"
-          id="movie"
-          onChange={(e) => updateMovie(e.target.value)}
-          value={movie}
+          id="story"
+          onChange={(e) => updateStory(e.target.value)}
+          value={story}
         />
         <label htmlFor="image">Image</label>
         <input

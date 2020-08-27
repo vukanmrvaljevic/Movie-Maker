@@ -7,8 +7,8 @@ import PostStory from "./PostStory"
 import CreateStory from "./CreateStory"
 
 function Story() {
-  const [movieInfo, updateMovieInfo] = useState([])
-  const [fetchMovieInfo, updateFetchMovieInfo] = useState(false)
+  const [storyInfo, updateStoryInfo] = useState([])
+  const [fetchStoryInfo, updateFetchStoryInfo] = useState(false)
 
   useEffect(() => {
     const apiCall = async () => {
@@ -20,42 +20,33 @@ function Story() {
           },
         }
       )
-      updateMovieInfo(posts.data.records)
+      updateStoryInfo(posts.data.records)
     }
     apiCall()
-  }, [fetchMovieInfo])
+  }, [fetchStoryInfo])
 
-  //   const myStyle = {
-  //     width: "120px",
-  //     height: "90px",
-  //     borderRadius: "10px",
-  //   }
+  const myStyle = {
+    width: "120px",
+    height: "90px",
+    borderRadius: "10px",
+  }
   return (
     <main>
       <nav className="nav-bar">
         <Link className="link-one" to="/" exact>
           <img src={image} alt="home-page" style={myStyle} />
         </Link>
-        <Link className="link-one" to="/Story">
-          Story
-        </Link>
-        <Link className="link-two" to="/ideas">
-          Movie-Ideas
-        </Link>
-        <Link className="link-three" to="/notes">
-          Movie-Notes
-        </Link>
       </nav>
       <CreateStory
-        updateFetchMovieInfo={updateFetchMovieInfo}
-        fetchMovieInfo={fetchMovieInfo}
+        updateFetchStoryInfo={updateFetchStoryInfo}
+        fetchStoryInfo={fetchStoryInfo}
       />
-      {movieInfo.map((post) => (
+      {storyInfo.map((post) => (
         <PostStory
           post={post}
           key={post.id}
-          updateFetchMovieInfo={updateFetchMovieInfo}
-          fetchMovieInfo={fetchMovieInfo}
+          updateFetchStoryInfo={updateFetchStoryInfo}
+          fetchStoryInfo={fetchStoryInfo}
         />
       ))}
     </main>
