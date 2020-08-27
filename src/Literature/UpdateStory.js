@@ -24,7 +24,7 @@ function UpdateStory(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchStoryInfo(!props.fetchStoryInfo)
     updateName("")
     updateStory("")
     updateImage("")
@@ -55,7 +55,7 @@ function UpdateStory(props) {
             onChange={(e) => updateImage(e.target.value)}
             value={image}
           />
-          <input type="submit" value="Edit Character List" />
+          <input type="submit" value="Edit Story" />
         </form>
       </main>
     </>

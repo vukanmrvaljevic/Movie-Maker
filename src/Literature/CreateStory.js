@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import axios from "axios"
 
+
 function CreateStory(props) {
   const [name, updateName] = useState("")
   const [story, updateStory] = useState("")
@@ -24,7 +25,7 @@ function CreateStory(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchStoryInfo(!props.fetchStoryInfo)
     updateName("")
     updateStory("")
     updateImage("")
@@ -52,6 +53,7 @@ function CreateStory(props) {
         <input
           name="text"
           id="character"
+
           onChange={(e) => updateStory(e.target.value)}
           value={story}
         />
