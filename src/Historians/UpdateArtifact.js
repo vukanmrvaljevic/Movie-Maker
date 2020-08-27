@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import axios from "axios"
-import "./App.css"
+import "./History.css"
 
-function UpdateActors(props) {
+function UpdateArtifact(props) {
   const [name, updateName] = useState(props.post.fields.name)
-  const [movie, updateMovie] = useState(props.post.fields.movie)
+  const [artifact, updateArtifact] = useState(props.post.fields.artifact)
   const [image, updateImage] = useState(props.post.fields.image)
 
   const handleSubmit = async (e) => {
@@ -14,7 +14,7 @@ function UpdateActors(props) {
       {
         fields: {
           name: name,
-          movie: movie,
+          artifact: artifact,
         },
       },
       {
@@ -24,9 +24,9 @@ function UpdateActors(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchArtifactInfo(!props.fetchArtifactInfo)
     updateName("")
-    updateMovie("")
+    updateArtifact("")
     updateImage("")
   }
   return (
@@ -41,12 +41,12 @@ function UpdateActors(props) {
             onChange={(e) => updateName(e.target.value)}
             value={name}
           />
-          <label htmlFor="movie">Movie</label>
+          <label htmlFor="artifact">artifact</label>
           <input
             name="text"
-            id="movie"
-            onChange={(e) => updateMovie(e.target.value)}
-            value={movie}
+            id="artifact"
+            onChange={(e) => updateArtifact(e.target.value)}
+            value={artifact}
           />
           <label htmlFor="image">Image</label>
           <input
@@ -61,4 +61,4 @@ function UpdateActors(props) {
     </>
   )
 }
-export default UpdateActors
+export default UpdateArtifact

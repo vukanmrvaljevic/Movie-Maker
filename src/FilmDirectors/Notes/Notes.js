@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import axios from "axios"
+import image from "./home.png"
 
 import CreateNotes from "./CreateNotes"
 import PostNotes from "./PostNotes"
@@ -23,8 +25,27 @@ function Notes() {
     apiCall()
   }, [fetchNoteInfo])
 
+  const myStyle = {
+    width: "120px",
+    height: "90px",
+    borderRadius: "10px",
+  }
   return (
     <main>
+      <nav className="nav-bar">
+        <Link className="link-one" to="/" exact>
+          <img src={image} alt="home-page" style={myStyle} />
+        </Link>
+        <Link className="link-one" to="/actors">
+          Actors
+        </Link>
+        <Link className="link-two" to="/ideas">
+          Movie-Ideas
+        </Link>
+        <Link className="link-three" to="/notes">
+          Movie-Notes
+        </Link>
+      </nav>
       <CreateNotes
         updateFetchNoteInfo={updateFetchNoteInfo}
         fetchNoteInfo={fetchNoteInfo}

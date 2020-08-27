@@ -1,9 +1,9 @@
 import React from "react"
-import UpdateActors from "./UpdateActors"
+import UpdateArtifact from "./UpdateArtifact"
 import axios from "axios"
-import "./App.css"
+import "./History.css"
 
-function PostActors(props) {
+function PostArtifact(props) {
   const post = props.post
 
   const deletePost = async () => {
@@ -15,7 +15,7 @@ function PostActors(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchArtifactInfo(!props.fetchArtifactInfo)
   }
 
   const myStyle = {
@@ -29,10 +29,10 @@ function PostActors(props) {
           <h2>{post.fields.movie}</h2>
           <img src={post.fields.image} alt="img" style={myStyle} />
         </section>
-        <UpdateActors
+        <UpdateArtifact
           post={post}
-          fetchMovieInfo={props.fetchMovieInfo}
-          updateFetchMovieInfo={props.updateFetchMovieInfo}
+          fetchArtifactInfo={props.fetchArtifactInfo}
+          updateFetchArtifactInfo={props.updateFetchArtifactInfo}
         />
         <section className="button">
           <button className="delete-button" onClick={deletePost}>
@@ -44,4 +44,4 @@ function PostActors(props) {
   )
 }
 
-export default PostActors
+export default PostArtifact

@@ -1,7 +1,7 @@
 import React from "react"
 import UpdateIdeas from "./UpdateIdeas"
 import axios from "axios"
-import "./App.css"
+import "./Ideas.css"
 
 function PostIdeas(props) {
   const post = props.post

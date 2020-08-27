@@ -1,14 +1,16 @@
 import React from "react"
-import { Route, Link } from "react-router-dom"
+import { Route } from "react-router-dom"
 import "./App.css"
-import Actors from "./Actors"
-import Ideas from "./Ideas"
-import Notes from "./Notes"
+import Actors from "./FilmDirectors/Actors/Actors"
+import Ideas from "./FilmDirectors/Ideas/Ideas"
+import Notes from "./FilmDirectors/Notes/Notes"
+import Menu from "./Menu"
+import Artifacts from "./Historians/Artifacts"
 
 function App() {
   return (
     <div>
-      <nav className="nav-bar">
+      {/* <nav className="nav-bar">
         <Link className="link-one" to="/actors">
           Actors
         </Link>
@@ -18,15 +20,24 @@ function App() {
         <Link className="link-three" to="/notes">
           Movie-Notes
         </Link>
-      </nav>
-      <Route path="/actors" exact>
+      </nav> */}
+      <Route path="/" exact>
+        <Menu />
+      </Route>
+      <Route path="/actors">
         <Actors />
+      </Route>
+      <Route path="/menu">
+        <Menu />
       </Route>
       <Route path="/ideas">
         <Ideas />
       </Route>
       <Route path="/notes">
         <Notes />
+      </Route>
+      <Route path="/historians">
+        <Artifacts />
       </Route>
     </div>
   )

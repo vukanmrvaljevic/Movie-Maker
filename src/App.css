@@ -28,8 +28,7 @@
   color: #61dafb;
 }
 
-/* Nav-Bar */
-.nav-bar {
+Nav-Bar .nav-bar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -64,11 +63,11 @@ a:hover {
 
 /* Body Design */
 body {
-  background-color: black;
+  background-color: white;
 }
 
 /* Actors Page */
-.form-creator {
+/* .form-creator {
   background-color: #111111;
   color: #eec548;
   padding: 20px;
@@ -127,10 +126,10 @@ body {
   position: relative;
   top: 15px;
   left: 180px;
-}
+} */
 
 /* Movie Ideas Page  */
-.editor-ideas {
+/* .editor-ideas {
   background-color: #111111;
   color: #eec548;
   padding: 20px;
@@ -160,10 +159,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 /* Movie-Notes Page */
-.notes-container {
+/* .notes-container {
   background-color: #111111;
   color: #eec548;
   padding: 20px;
@@ -193,8 +192,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-}
-
+} */
 /*MEDIA QUERIES*/
 
 @media only screen and (max-width: 560px) {

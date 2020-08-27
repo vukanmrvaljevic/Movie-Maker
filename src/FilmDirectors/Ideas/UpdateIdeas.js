@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import axios from "axios"
-import "./App.css"
+import "./Ideas.css"
 
 function UpdateIdeas(props) {
   const [name, updateName] = useState(props.post.fields.name)

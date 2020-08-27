@@ -1,0 +1,32 @@
+body {
+  background-color: white;
+}
+
+.menu {
+  color: black;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+  margin-left: 650px;
+}
+.one {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 50px;
+}
+.two {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 50px;
+}
+.three {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 50px;
+}

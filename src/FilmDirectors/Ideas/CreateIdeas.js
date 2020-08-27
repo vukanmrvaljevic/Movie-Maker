@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import axios from "axios"
-import "./App.css"
+import "./Ideas.css"
 import image from "./ideas.png"
 
 function CreateIdeas(props) {

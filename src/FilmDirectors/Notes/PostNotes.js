@@ -1,7 +1,7 @@
 import React from "react"
 import UpdateNotes from "./UpdateNotes"
 import axios from "axios"
-import "./App.css"
+import "./Notes.css"
 
 function PostNotes(props) {
   const paper = props.post
