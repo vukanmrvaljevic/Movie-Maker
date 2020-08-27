@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import axios from "axios"
-import "./Actors.css"
+import "./Literature.css"
 
 function UpdateActors(props) {
   const [name, updateName] = useState(props.post.fields.name)
-  const [movie, updateMovie] = useState(props.post.fields.movie)
+  const [story, updateStory] = useState(props.post.fields.story)
   const [image, updateImage] = useState(props.post.fields.image)
 
   const handleSubmit = async (e) => {
@@ -14,7 +14,7 @@ function UpdateActors(props) {
       {
         fields: {
           name: name,
-          movie: movie,
+          story: story,
         },
       },
       {
@@ -24,29 +24,29 @@ function UpdateActors(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchStoryInfo(!props.fetchStoryInfo)
     updateName("")
-    updateMovie("")
+    updateStory("")
     updateImage("")
   }
   return (
     <>
       <main className="total-container">
         <form className="form-editor" onSubmit={handleSubmit}>
-          <h2>Edit Actor List</h2>
-          <label htmlFor="actor">Actor</label>
+          <h2>Edit Character List</h2>
+          <label htmlFor="character">Characters</label>
           <input
             name="text"
-            id="actor"
+            id="character"
             onChange={(e) => updateName(e.target.value)}
             value={name}
           />
-          <label htmlFor="movie">Movie</label>
+          <label htmlFor="story">Story</label>
           <input
             name="text"
-            id="movie"
-            onChange={(e) => updateMovie(e.target.value)}
-            value={movie}
+            id="story"
+            onChange={(e) => updateStory(e.target.value)}
+            value={story}
           />
           <label htmlFor="image">Image</label>
           <input
@@ -55,7 +55,7 @@ function UpdateActors(props) {
             onChange={(e) => updateImage(e.target.value)}
             value={image}
           />
-          <input type="submit" value="Edit List" />
+          <input type="submit" value="Edit Story" />
         </form>
       </main>
     </>

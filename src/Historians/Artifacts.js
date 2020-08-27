@@ -36,15 +36,6 @@ function Artifacts() {
         <Link className="link-one" to="/" exact>
           <img src={image} alt="home-page" style={myStyle} />
         </Link>
-        {/* <Link className="link-one" to="/Artifact">
-          Artifact
-        </Link>
-        <Link className="link-two" to="/ideas">
-          Movie-Ideas
-        </Link>
-        <Link className="link-three" to="/notes">
-          Movie-Notes
-        </Link> */}
       </nav>
       <CreateArtifact
         updateFetchArtifactInfo={updateFetchArtifactInfo}
