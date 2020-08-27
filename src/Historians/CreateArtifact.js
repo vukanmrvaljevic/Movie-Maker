@@ -31,11 +31,11 @@ function CreateArtifact(props) {
     updateImage("")
   }
 
-  const myStyle = {
-    width: "120px",
-    height: "90px",
-    borderRadius: "10px",
-  }
+  //   const myStyle = {
+  //     width: "120px",
+  //     height: "90px",
+  //     borderRadius: "10px",
+  //   }
   return (
     <>
       <form className="form-creator" onSubmit={handleSubmit}>
