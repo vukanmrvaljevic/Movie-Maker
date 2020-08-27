@@ -1,9 +1,9 @@
 import React from "react"
-import UpdateActors from "./UpdateActors"
+import UpdateStory from "./UpdateStory"
 import axios from "axios"
-import "./Actors.css"
+import "./Literature.css"
 
-function PostActors(props) {
+function PostStory(props) {
   const post = props.post
 
   const deletePost = async () => {
@@ -15,7 +15,7 @@ function PostActors(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchStoryInfo(!props.fetchStoryInfo)
   }
 
   const myStyle = {
@@ -26,13 +26,13 @@ function PostActors(props) {
       <main className="total-container">
         <section className="form-container">
           <h2>{post.fields.name}</h2>
-          <h2>{post.fields.movie}</h2>
+          <h2>{post.fields.story}</h2>
           <img src={post.fields.image} alt="img" style={myStyle} />
         </section>
-        <UpdateActors
+        <UpdateStory
           post={post}
-          fetchMovieInfo={props.fetchMovieInfo}
-          updateFetchMovieInfo={props.updateFetchMovieInfo}
+          fetchStoryInfo={props.fetchStoryInfo}
+          updateFetchStoryInfo={props.updateFetchStoryInfo}
         />
         <section className="button">
           <button className="delete-button" onClick={deletePost}>
@@ -44,4 +44,4 @@ function PostActors(props) {
   )
 }
 
-export default PostActors
+export default PostStory
