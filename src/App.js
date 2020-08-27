@@ -9,17 +9,6 @@ import Story from "./Literature/Story"
 function App() {
   return (
     <div>
-      {/* <nav className="nav-bar">
-        <Link className="link-one" to="/actors">
-          Actors
-        </Link>
-        <Link className="link-two" to="/ideas">
-          Movie-Ideas
-        </Link>
-        <Link className="link-three" to="/notes">
-          Movie-Notes
-        </Link>
-      </nav> */}
       <Route path="/" exact>
         <Menu />
       </Route>

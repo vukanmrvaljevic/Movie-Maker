@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import axios from "axios"
-import image from "./home.png"
+import image from "./home2.png"
 
 import PostStory from "./PostStory"
 import CreateStory from "./CreateStory"

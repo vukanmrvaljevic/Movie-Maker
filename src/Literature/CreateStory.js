@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import axios from "axios"
-// import images from "./casting.png"
+
 
 function CreateStory(props) {
   const [name, updateName] = useState("")
@@ -40,19 +40,20 @@ function CreateStory(props) {
     <>
       <form className="form-creator" onSubmit={handleSubmit}>
         {/* <img src={images} alt="idea" style={myStyle} /> */}
-        <label className="acting" htmlFor="character">
-          Characters
+        <label className="stories" htmlFor="story">
+          Story
         </label>
         <input
           name="text"
-          id="character"
+          id="story"
           onChange={(e) => updateName(e.target.value)}
           value={name}
         />
-        <label htmlFor="story">story</label>
+        <label htmlFor="characters">Character</label>
         <input
           name="text"
-          id="story"
+          id="character"
+
           onChange={(e) => updateStory(e.target.value)}
           value={story}
         />

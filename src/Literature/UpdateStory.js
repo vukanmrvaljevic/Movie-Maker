@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import axios from "axios"
 import "./Literature.css"
 
-function UpdateActors(props) {
+function UpdateStory(props) {
   const [name, updateName] = useState(props.post.fields.name)
   const [story, updateStory] = useState(props.post.fields.story)
   const [image, updateImage] = useState(props.post.fields.image)
@@ -61,4 +61,4 @@ function UpdateActors(props) {
     </>
   )
 }
-export default UpdateActors
+export default UpdateStory
