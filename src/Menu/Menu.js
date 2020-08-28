@@ -8,7 +8,7 @@ function Menu() {
       <Link className="one" to="/actors">
         Film
       </Link>
-      <Link className="three" to="/literature">
+      <Link className="two" to="/literature">
         Literature
       </Link>
       <Link className="three" to="/historians">
