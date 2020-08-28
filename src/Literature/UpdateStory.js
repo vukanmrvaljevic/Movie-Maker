@@ -24,7 +24,7 @@ function UpdateStory(props) {
         },
       }
     )
-    props.updateFetchMovieInfo(!props.fetchMovieInfo)
+    props.updateFetchStoryInfo(!props.fetchStoryInfo)
     updateName("")
     updateStory("")
     updateImage("")
