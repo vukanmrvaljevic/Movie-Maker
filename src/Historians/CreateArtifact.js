@@ -38,7 +38,7 @@ function CreateArtifact(props) {
   //   }
   return (
     <>
-      <form className="form-creator" onSubmit={handleSubmit}>
+      <form className="form-constructor" onSubmit={handleSubmit}>
         {/* <img src={images} alt="idea" style={myStyle} /> */}
         <label className="acting" htmlFor="actor">
           Actor

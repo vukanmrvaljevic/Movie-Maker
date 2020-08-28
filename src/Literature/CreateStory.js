@@ -38,7 +38,7 @@ function CreateStory(props) {
   //   }
   return (
     <>
-      <form className="form-creator" onSubmit={handleSubmit}>
+      <form className="form-maker" onSubmit={handleSubmit}>
         {/* <img src={images} alt="idea" style={myStyle} /> */}
         <label className="stories" htmlFor="story">
           Story
